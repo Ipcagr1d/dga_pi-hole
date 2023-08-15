@@ -4,8 +4,7 @@
 
 # Define an array of repository URLs
 declare -a REPOS=(
-  "https://github.com/ybubnov/deep-lookup.git"
-  "https://github.com/baderj/domain_generation_algorithms.git"
+  "https://github.com/Ipcagr1d/deeplookup_pi-hole.git"
 )
 
 # Function to clone a repository
