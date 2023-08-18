@@ -168,29 +168,3 @@ This diagram illustrates the process of a DNS query, showing how a DNS resolver 
 16. The resolver finally returns the answer to the host.
 
 This diagram provides an overview of the DNS query resolution process, involving the DNS resolver, root server, TLD server, and authoritative server.
-
-```plantuml
-@startuml
-!define NWDIAGURL https://raw.githubusercontent.com/rbocchinfuso/plantuml-nwdiag-sprites/v1.0/sprites
-!define SPRITESURL https://raw.githubusercontent.com/rbocchinfuso/plantuml-nwdiag-sprites/v1.0/sprites
-!includeurl NWDIAGURL/nwdiag.puml
-
-nwdiag {
-  network my_network {
-    Internet;
-    Router [address = "192.168.1.1"];
-    PiHole [address = "192.168.1.2"];
-    Device1 [address = "192.168.1.3"];
-    Device2 [address = "192.168.1.4"];
-    Device3 [address = "192.168.1.5"];
-
-    Internet ..> Router;
-    Router ..> PiHole;
-    PiHole ..> Device1;
-    PiHole ..> Device2;
-    PiHole ..> Device3;
-  }
-}
-@enduml
-
-```
